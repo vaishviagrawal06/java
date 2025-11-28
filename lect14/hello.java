@@ -1,19 +1,16 @@
-import java.util.*;
+import  java.util.*;
 class hello{
     public static void main(String[] args) {
-        String str = "abcdsabcgd";
-        
-        HashMap<Character,Integer> map = new HashMap<>();
-
-        for(char ch : str.toCharArray()){
-            map.put(ch, map.getOrDefault(ch, 0) + 1);
-        }
-        // System.out.println(map);
-        for(char ch:str.toCharArray()){
-            if(map.get(ch) ==1){
-                System.out.println(ch);
+        int arr[]={2,3,5,4};
+             HashMap<Integer,Integer> map =new HashMap<>();
+        int target=9;
+        for(int i=0;i<arr.length;i++){
+            int diff=target-arr[i];
+            if(map.containsKey(diff)){
+                System.out.println(map.get(diff) + " "+i);
                 break;
             }
+            map.put(arr[i], i);
         }
     }
 }

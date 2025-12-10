@@ -1,8 +1,8 @@
 import java.io.*;
 class hello{
     public static void main(String[] args) {
-        
-        readFileData();
+        deletefile();
+        // readFileData();
         try{
             File file = new File("index.html ");
             if(file.createNewFile()){
@@ -36,6 +36,20 @@ class hello{
         catch(Exception e){
             System.out.println(e);
         }
+        }
+        static void deletefile(){
+            try{
+                File file = new File("index.html");
+                if(file.delete()){
+                    System.out.println("deletedddd");
+                }
+                else{
+
+                }
+            }
+            catch(Exception e){
+                System.out.println(e);
+            }
         }
        
     }

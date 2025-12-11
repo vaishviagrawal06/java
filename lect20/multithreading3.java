@@ -7,6 +7,7 @@ class MyThread extends Thread{
 
         for(int i = 0;i < 5;i++){
             System.out.println(i+" t1");
+            
         }
     }
 }

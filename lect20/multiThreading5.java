@@ -19,7 +19,7 @@ class MyThread extends Thread {
             MyThread t1 = new MyThread();
             t1.start(); 
             for (int i = 1; i <= 5; i++) {
-                System.out.println("main thread.... " + i);
+                System.out.println("Timer.... " + i);
                 try {
                     Thread.sleep(3000);
                 } catch (Exception e) {
